@@ -96,6 +96,7 @@ unique (session_id, row_number, place_number)
 
 ### Задание
 1. Ознакомиться с требованиями к Web-проектам. Проверка будет происходить в соответствии с ними;
+   https://github.com/ShamRail/job4j_requirements/wiki
 2. Создать репозиторий job4j_cinema;
 3. Настроить проект. Указать версию Java, зависимости, плагины, профили в pom.xml. Заполнить .gitignore;
 4. Создать БД cinema и создать схему db/scripts/001_ddl_create_initial_schema.sql, указанную выше;

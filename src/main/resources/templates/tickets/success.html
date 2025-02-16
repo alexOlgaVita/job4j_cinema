@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="fragments/header :: header"></head>
+<body>
+<div th:replace="fragments/navigation :: navigation"></div>
+<div class="container">
+    <h3 class="mt-3">Покупка совершена</h3>
+    <p class="text-success" th:text="'Ув. ' + ${userName} + '!'"</p>
+    <p class="text-info" th:text="'Вы успешно приобрели билет на фильм ' + ${filmSession.filmName} + '.'"></p>
+    <p class="text-info" th:text="'Начало: ' + ${filmSession.startTime} + ', окончание: ' + ${filmSession.endTime}"></p>
+    <p class="text-info" th:text="'Зал ' + ${filmSession.hallsName}"></p>
+    <p class="text-info" th:text="'Ряд: ' + ${ticket.rowNumber} + ', место: ' + ${ticket.placeNumber}"></p>
+</div>
+<footer th:include="fragments/footer :: footer"></footer>
+</body>
+</html>

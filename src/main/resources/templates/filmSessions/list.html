@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="fragments/header :: header"></head>
+<body>
+<div th:replace="fragments/navigation :: navigation"></div>
+<div class="container">
+    <div class="row">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Фильм</th>
+                <th scope="col">Зал</th>
+                <th scope="col">Начало сеанса</th>
+                <th scope="col">Конец сеанса</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="filmSession: ${filmSessions}">
+                <td th:text="${filmSession.id}"/>
+                <td>
+                    <a th:text="${filmSession.filmName}"
+                       th:href="@{/tickets/{filmSessionId}(filmSessionId=${filmSession.id})}">
+                    </a>
+                </td>
+                <td>
+                    <a th:text="${filmSession.hallsName}"
+                       th:href="@{/filmSessions/{filmSession}(filmSession=${filmSession.id})}">
+                    </a>
+                </td>
+                <td th:text="${filmSession.startTime }"/>
+                <td th:text="${filmSession.endTime }"/>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<footer th:include="fragments/footer :: footer"></footer>
+</body>
+</html>

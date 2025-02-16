@@ -4,7 +4,110 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11aa2faa-c085-4955-a1f7-09ddb4296608" name="Changes" comment="">
+    <list default="true" id="11aa2faa-c085-4955-a1f7-09ddb4296608" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/db/dbchangelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/liquibase.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/liquibase_test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/scripts/001_ddl_create_initial_schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/scripts/002_dml_insert_files.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/scripts/003_dml_insert_genres.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/scripts/004_dml_insert_films.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/scripts/005_dml_insert_halls.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/scripts/006_dml_insert_film_sessions.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/configuration/DatasourceConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/controller/FilmController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/controller/FilmSessionsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/controller/TicketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/dto/FilmDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/dto/FilmSessionDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/dto/TicketDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/filter/SessionFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/model/File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/model/Film.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/model/FilmSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/model/Genre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/model/Hall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/model/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/repository/FileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/repository/FilmRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/repository/FilmSessionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/repository/GenreRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/repository/HallRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/repository/Sql2oFileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/repository/Sql2oFilmRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/repository/Sql2oFilmSessionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/repository/Sql2oGenreRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/repository/Sql2oHallRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/repository/Sql2oTicketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/repository/Sql2oUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/repository/TicketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/service/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/service/FilmService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/service/FilmSessionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/service/GenreService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/service/HallService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/service/SimpleFileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/service/SimpleFilmService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/service/SimpleFilmSessionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/service/SimpleGenreService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/service/SimpleHallService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/service/SimpleTicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/service/SimpleUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/service/TicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/kaukaz/kaukaz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/ostrov/ostrov.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/files/strongNut/strongNut.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/code.jquery.com_jquery-3.7.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/errors/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/filmSessions/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/films/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/navigation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/tickets/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/tickets/fail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/tickets/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/users/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/users/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/job4j/controller/TicketControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/job4j/controller/UserControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/job4j/repository/Sql2oTicketRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/job4j/repository/Sql2oUserRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/job4j/service/SimpleTicketServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/job4j/service/SimpleUserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/connection.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkstyle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -12,8 +115,31 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="enabledProfiles">
+      <list>
+        <option value="test" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="2su5RuwEvQC4g1uwXqkyhvo3o3S" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -24,9 +150,136 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/projects/job4j_cinema/db/scripts",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "org.infernus.idea.checkstyle.CheckStyleConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\job4j_cinema\db\scripts" />
+      <recent name="C:\projects\job4j_cinema\src\test\resources" />
+      <recent name="C:\projects\job4j_cinema\src\main\resources\templates\tickets" />
+      <recent name="C:\projects\job4j_cinema\src\main\resources\templates\filmSessions" />
+      <recent name="C:\projects\job4j_cinema\src\main\resources\templates\showtimes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projects\job4j_cinema\src\main\resources\static" />
+      <recent name="C:\projects\job4j_cinema\files\strongNut" />
+      <recent name="C:\projects\job4j_cinema\files\ostrov" />
+      <recent name="C:\projects\job4j_cinema\files\kaukaz" />
+      <recent name="C:\projects\job4j_cinema\db\scripts" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.job4j.service" />
+      <recent name="ru.job4j.repository" />
+      <recent name="ru.job4j.controller" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.job4j.controller" />
+      <recent name="ru.job4j.dto" />
+      <recent name="ru.job4j.service" />
+      <recent name="ru.job4j.repository" />
+      <recent name="ru.job4j.model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SimpleUserServiceTest">
+    <configuration name="SimpleTicketServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="job4j_cinema" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.job4j.service" />
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.service.SimpleTicketServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleTicketServiceTest.whenFindBySessionRowPlaceFailWithMock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="job4j_cinema" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.job4j.service" />
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.service.SimpleTicketServiceTest" />
+      <option name="METHOD_NAME" value="whenFindBySessionRowPlaceFailWithMock" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleTicketServiceTest.whenFindBySessionRowPlaceSuccessfullyWithMock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="job4j_cinema" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.job4j.service" />
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.service.SimpleTicketServiceTest" />
+      <option name="METHOD_NAME" value="whenFindBySessionRowPlaceSuccessfullyWithMock" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleTicketServiceTest.whenSaveFailWithMock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="job4j_cinema" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.job4j.service" />
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.service.SimpleTicketServiceTest" />
+      <option name="METHOD_NAME" value="whenSaveFailWithMock" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleUserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="job4j_cinema" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.job4j.service" />
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.service.SimpleUserServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SimpleUserServiceTest" />
+        <item itemvalue="JUnit.SimpleTicketServiceTest" />
+        <item itemvalue="JUnit.SimpleTicketServiceTest.whenFindBySessionRowPlaceFailWithMock" />
+        <item itemvalue="JUnit.SimpleTicketServiceTest.whenFindBySessionRowPlaceSuccessfullyWithMock" />
+        <item itemvalue="JUnit.SimpleTicketServiceTest.whenSaveFailWithMock" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -36,6 +289,82 @@
       <option name="presentableId" value="Default" />
       <updated>1739292617347</updated>
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1739294692955</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739294692955</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init">
+      <option name="closed" value="true" />
+      <created>1739294728770</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739294728770</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init">
+      <option name="closed" value="true" />
+      <created>1739295155659</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1739295155659</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/job4j/controller/TicketController.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/job4j/controller/TicketController.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/job4j/repository/Sql2oTicketRepositoryTest.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/job4j/repository/Sql2oTicketRepositoryTest.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/job4j/repository/Sql2oTicketRepositoryTest.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.lang.ClassCastException" memberName="suppressedExceptions" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

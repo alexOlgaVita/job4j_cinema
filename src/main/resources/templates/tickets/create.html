@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="fragments/header :: header"></head>
+<body>
+<div th:replace="fragments/navigation :: navigation"></div>
+<div class="container">
+    <form class="mt-3" th:action="@{/tickets/create}" method="post" th:object="${filmSession}"
+          enctype="multipart/form-data">
+        <input type="hidden" name="sessionId" th:value="*{id}">
+        <input type="hidden" name="userId" th:value="${userId}">
+        <table class="table">
+            <thead>
+            <tbody>
+            <tr>
+                <td rowspan="3" vertical-align="middle">
+                    <img th:src="@{/files/{fileName}(fileName=${film.fileFullPath})}" alt="No movie image" width="100">
+                </td>
+                <td>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th scope="col">Название фильма</th>
+                            <th scope="col">Зал</th>
+                            <th scope="col">Длительность</th>
+                            <th scope="col">Цена</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td th:text="*{filmName}"/>
+                            <td th:text="*{hallsName}"/>
+                            <td th:text="${film.durationInMinutes} + ' мин.'"/>
+                            <td th:text="*{price} + ' руб.'"/>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <b>Начало сеанса</b></td>
+                            <td th:text="*{startTime}"/>
+                            <td>
+                                <b>Конец сеанса</b>
+                            </td>
+                            <td th:text="*{endTime}"/>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Выберите ряд</th>
+                <th scope="col">Выберите место</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <select class="form-control" id="ticketRowNumber" name="rowNumber">
+                        <option th:each="i : ${#numbers.sequence(1, hall.rowCount)}" th:value="${i}"
+                                th:text="'ряд ' + ${i}">
+                        </option>
+                    </select>
+                </td>
+                <td>
+                    <select class="form-control" id="ticketPlaceNumber" name="placeNumber">
+                        <option th:each="i : ${#numbers.sequence(1, hall.placeCount)}" th:value="${i}"
+                                th:text="'место ' + ${i}">
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="mb-3 row">
+            <div class="col-6"></div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-6"><a class="btn btn-danger w-100"
+                                          th:href="@{/filmSessions}">Отмена</a></div>
+                    <div class="col-6">
+                        <button class="btn btn-primary w-100"
+                                type="submit">Купить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

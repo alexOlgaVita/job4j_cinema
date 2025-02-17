@@ -15,7 +15,11 @@ import ru.job4j.dto.FilmSessionDto;
 import ru.job4j.model.Hall;
 import ru.job4j.model.Ticket;
 import ru.job4j.model.User;
-import ru.job4j.service.*;
+import ru.job4j.service.film.FilmService;
+import ru.job4j.service.filmsession.FilmSessionService;
+import ru.job4j.service.hall.HallService;
+import ru.job4j.service.ticket.TicketService;
+import ru.job4j.service.user.UserService;
 
 import java.sql.Timestamp;
 import java.util.Optional;
@@ -132,6 +136,6 @@ class TicketControllerTest {
         var model = new ConcurrentModel();
         var view = ticketController.create(ticket, model);
 
-        assertThat(view).isEqualTo("users/register");
+        assertThat(view).isEqualTo("users/login");
     }
 }

@@ -5,8 +5,10 @@ import org.junit.jupiter.api.Test;
 import ru.job4j.configuration.DatasourceConfiguration;
 import ru.job4j.dto.TicketDto;
 import ru.job4j.model.User;
-import ru.job4j.repository.Sql2oUserRepository;
-import ru.job4j.repository.UserRepository;
+import ru.job4j.repository.user.Sql2oUserRepository;
+import ru.job4j.repository.user.UserRepository;
+import ru.job4j.service.user.SimpleUserService;
+import ru.job4j.service.user.UserService;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;

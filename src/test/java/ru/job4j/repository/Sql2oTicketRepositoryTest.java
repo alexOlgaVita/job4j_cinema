@@ -6,6 +6,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.job4j.configuration.DatasourceConfiguration;
 import ru.job4j.model.Ticket;
+import ru.job4j.repository.ticket.Sql2oTicketRepository;
+import ru.job4j.repository.ticket.TicketRepository;
 
 import java.util.List;
 import java.util.Properties;

@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
 import org.springframework.ui.ConcurrentModel;
 import ru.job4j.model.User;
-import ru.job4j.service.UserService;
+import ru.job4j.service.user.UserService;
 
 import java.util.Optional;
 

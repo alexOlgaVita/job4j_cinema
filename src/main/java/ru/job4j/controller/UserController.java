@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import ru.job4j.model.User;
-import ru.job4j.service.UserService;
+import ru.job4j.service.user.UserService;
 
 @ThreadSafe
 @Controller
@@ -30,7 +30,7 @@ public class UserController {
         var savedUser = userService.save(user);
         if (savedUser.isEmpty()) {
             model.addAttribute("message", "Пользователь с такой почтой уже существует");
-            return "errors/404";
+            return "users/register";
         }
         return "redirect:/";
     }

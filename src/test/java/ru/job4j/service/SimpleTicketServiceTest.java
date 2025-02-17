@@ -5,7 +5,16 @@ import org.junit.jupiter.api.Test;
 import ru.job4j.configuration.DatasourceConfiguration;
 import ru.job4j.dto.TicketDto;
 import ru.job4j.model.Ticket;
-import ru.job4j.repository.*;
+import ru.job4j.repository.film.FilmRepository;
+import ru.job4j.repository.filmsession.FilmSessionRepository;
+import ru.job4j.repository.film.Sql2oFilmRepository;
+import ru.job4j.repository.filmsession.Sql2oFilmSessionRepository;
+import ru.job4j.repository.hall.HallRepository;
+import ru.job4j.repository.hall.Sql2oHallRepository;
+import ru.job4j.repository.ticket.Sql2oTicketRepository;
+import ru.job4j.repository.ticket.TicketRepository;
+import ru.job4j.service.ticket.SimpleTicketService;
+import ru.job4j.service.ticket.TicketService;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;

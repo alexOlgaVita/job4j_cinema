@@ -6,6 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.job4j.configuration.DatasourceConfiguration;
 import ru.job4j.model.User;
+import ru.job4j.repository.user.Sql2oUserRepository;
 
 import java.util.List;
 import java.util.Map;

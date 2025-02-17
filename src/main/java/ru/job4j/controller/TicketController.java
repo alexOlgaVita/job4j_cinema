@@ -7,7 +7,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import ru.job4j.model.Ticket;
 import ru.job4j.model.User;
-import ru.job4j.service.*;
+import ru.job4j.service.film.FilmService;
+import ru.job4j.service.filmsession.FilmSessionService;
+import ru.job4j.service.hall.HallService;
+import ru.job4j.service.ticket.TicketService;
+import ru.job4j.service.user.UserService;
 
 @ThreadSafe
 @Controller
@@ -50,7 +54,7 @@ public class TicketController {
     @PostMapping("/create")
     public String create(@ModelAttribute Ticket ticket, Model model) {
         if (ticket.getUserId() == -1) {
-            return "users/register";
+            return "users/login";
         }
         var savedTicket = ticketService.save(ticket);
         if (savedTicket.isEmpty()) {
